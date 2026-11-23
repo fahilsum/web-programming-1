@@ -13,7 +13,7 @@ if ($result->num_rows == 1) {
     exit;
 } else {
     echo "<script>alert('Username atau Password salah!');
-        window.location='login.php';</script>";
+        window.location='../login.php';</script>";
 }
 $conn->close();
 ?>

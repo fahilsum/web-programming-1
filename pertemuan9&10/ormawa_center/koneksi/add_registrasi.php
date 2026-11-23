@@ -20,7 +20,7 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("sssssssss", $nim, $nama, $jeniskel, $kelas, $prodi, $no_hp, $alamat, $email, $password);
 
 if ($stmt->execute()) {
-    echo "<script>alert('Registrasi berhasil!'); window.location='login.php';</script>";
+    echo "<script>alert('Registrasi berhasil!'); window.location='../login.php';</script>";
 } else {
     echo "Gagal menyimpan data: " . $stmt->error;
 }
